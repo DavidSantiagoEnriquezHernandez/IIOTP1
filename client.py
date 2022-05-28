@@ -20,7 +20,7 @@ while True:
     
     data = {
         'id': 1,
-        'name': 'Sensor gyroscope',
+        'name': 'David Sensor gyroscope',
         'value': inclination
     }
 
