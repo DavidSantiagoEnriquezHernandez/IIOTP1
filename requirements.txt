@@ -1,5 +1,10 @@
+#all the utilities that we are going to use
 flask
 pyserial
 flask-restplus
+<<<<<<< HEAD
 psutil
  wmi
+=======
+psutil
+>>>>>>> master

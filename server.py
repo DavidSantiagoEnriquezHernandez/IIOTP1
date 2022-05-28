@@ -15,9 +15,14 @@ device = {
 @app.route('/devices', methods=['GET'])
 def go_home():
     return device
+<<<<<<< HEAD
 
 #Save an user
 @app.route('/users', methods=['POST'])
+=======
+    #save an user as a post method
+@app.route('/users' , methods=['POST'])
+>>>>>>> master
 def save_user():
     user = request.json
     print(user)

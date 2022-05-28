@@ -15,12 +15,20 @@ h = {'Content-type':'application/json'}
 
 
 while True:
+<<<<<<< HEAD
     
+=======
+    #variable inclination that will receive the random numbers
+>>>>>>> master
     inclination = s.get_random_number()
     
     data = {
         'id': 1,
+<<<<<<< HEAD
         'name': 'David Sensor gyroscope',
+=======
+        'name': 'Sensor gyroscope',
+>>>>>>> master
         'value': inclination
     }
 

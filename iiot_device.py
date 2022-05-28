@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+##libraries
+>>>>>>> master
 from random import randint
 import psutil
 
