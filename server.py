@@ -1,28 +1,35 @@
 from flask import Flask, request
 
-app = Flask ('__main__')
+app = Flask('__main__')
 
+'''
+CODE FOR TESTING, ASSUMING THAT COMES FROM THE DB
+'''
 device = {
-"code" : "121244",
-"descrip": "Sensor. humedad",
-"value" : 60
+    "code":"116233",
+    "descrip":"Temp. Sensor",
+    "value":67
 }
+
 
 @app.route('/devices', methods=['GET'])
 def go_home():
     return device
-    #save an user
-@app.route('/users' , methods=['POST'])
-def save_user():
-        user = request.json
-        print(user)
-        return user
 
-#save a device
-@app.route('/devices' , methods=['POST'])
+#Save an user
+@app.route('/users', methods=['POST'])
+def save_user():
+    user = request.json
+    print(user)
+    return user
+
+#Save a device
+@app.route('/devices', methods=['POST'])
 def save_device():
     device = request.json
-    return device
+    print (device)
+    return device, 201
+
 
 if __name__ == '__main__':
-        app.run(debug= True, port=5000)
+    app.run(debug=True, port=5000)
