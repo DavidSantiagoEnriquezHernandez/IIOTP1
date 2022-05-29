@@ -1,7 +1,7 @@
 from random import randint
 import psutil
 
-
+#libraries used
 # POO en Python
 
 '''Class definition'''

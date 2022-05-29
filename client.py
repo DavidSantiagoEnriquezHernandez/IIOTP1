@@ -2,6 +2,7 @@ from http import client
 from iiot_device import Sensor
 import json
 import time
+#libraries used
 
 ''' creation of the class of  HTTPConnection'''
 _conn = client.HTTPConnection(host='localhost', port=5000)
@@ -15,20 +16,12 @@ h = {'Content-type':'application/json'}
 
 
 while True:
-<<<<<<< HEAD
     
-=======
-    #variable inclination that will receive the random numbers
->>>>>>> master
     inclination = s.get_random_number()
     
     data = {
         'id': 1,
-<<<<<<< HEAD
         'name': 'David Sensor gyroscope',
-=======
-        'name': 'Sensor gyroscope',
->>>>>>> master
         'value': inclination
     }
 
